@@ -33,7 +33,7 @@ function FiguresPage () {
                         togglePop()
                         }}>
                         <div className="sub-product-block">
-                            <div className="product-img"></div>
+                            <div className="product-img" style={{backgroundImage: `url(${item.img})`}}></div>
                             <div className="product-text"><p>{item.text} <br/> {item.price}$</p></div>
                         </div>
                     </div>
