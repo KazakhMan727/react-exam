@@ -15,26 +15,15 @@ function FiguresPage () {
     return (
         <>
             {seen ? <PopUp toggle={togglePop} product={info} /> : null}
-            <div className="figures-page container">
-
-                {/* <div className="product-block" onClick={() => 
-                    {setInfo('bruh')
-                    togglePop()
-                    }}>
-                    <div className="sub-product-block">
-                        <div className="product-img"></div>
-                        <div className="product-text"><p>Demon Slayer - Iguro Palm size G.E.M. Series Figure with Gift</p></div>
-                    </div>
-                </div> */}
-
+            <div className="product-page container">
                 {storeArray.figures.map(item => (
                     <div className="product-block" key={item.id} onClick={() => 
                         {setInfo(item)
                         togglePop()
                         }}>
                         <div className="sub-product-block">
-                            <div className="product-img" style={{backgroundImage: `url(${item.img})`}}></div>
-                            <div className="product-text"><p>{item.text} <br/> {item.price}$</p></div>
+                            <div className="product-img"> <img src={item.img} alt="" /> </div>
+                            <div className="product-text"><p>{item.text} <br/> <b>{item.price}$</b></p></div>
                         </div>
                     </div>
                 ))}

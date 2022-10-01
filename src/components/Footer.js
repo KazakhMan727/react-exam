@@ -3,11 +3,11 @@ import React from "react";
 function Footer () {
 
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="sub-footer">
-                <p>Anime Shop © 2022</p>
+                <p>Anime Shop © 2022 (Note that this website was made for an exam, so it is not commercial)</p>
             </div>
-        </div>
+        </footer>
     );
 }
 
